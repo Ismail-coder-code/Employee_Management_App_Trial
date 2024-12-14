@@ -16,8 +16,7 @@ export default function ProfileSetupForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would typically save the profile information
-    // For now, we'll just redirect to the main dashboard
+  
     router.push('/dashboard')
   }
 
