@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 export default function Dashboard() {
   const [currentTime, setCurrentTime] = useState(new Date())
-  const [userName, setUserName] = useState('John Doe') // This should be fetched from an API in a real app
+  const [userName, setUserName] = useState('John Doe') 
 
   useEffect(() => {
     const timer = setInterval(() => setCurrentTime(new Date()), 1000)
