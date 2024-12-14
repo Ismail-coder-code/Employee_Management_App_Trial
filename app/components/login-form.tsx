@@ -14,8 +14,7 @@ export default function LoginForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would typically validate the credentials
-    // For now, we'll just redirect to the profile setup page
+
     router.push('/profile-setup')
   }
 
