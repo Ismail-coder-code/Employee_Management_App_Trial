@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { User, Briefcase, Building, Save } from 'lucide-react'
 
 export default function ProfileEditForm() {
-  const [name, setName] = useState('John Doe') // This should be fetched from an API in a real app
+  const [name, setName] = useState('John Doe') 
   const [age, setAge] = useState('30')
   const [designation, setDesignation] = useState('Software Engineer')
   const [companyName, setCompanyName] = useState('Tech Corp')
@@ -16,8 +16,7 @@ export default function ProfileEditForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would typically save the updated profile information to an API
-    // For now, we'll just redirect back to the dashboard
+   
     router.push('/dashboard')
   }
 
